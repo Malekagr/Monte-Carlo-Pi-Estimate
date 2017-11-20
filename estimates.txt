@@ -1,0 +1,151 @@
+Threads: 10
+Iterations: 10000
+Pi: 3.1480519480519478
+Total: 10010
+Inside: 7878
+Outside: 2132
+Ratio: 3.6951219512195124
+real: 6ms
+user: 11ms
+sys: 5ms
+____________________________________________
+
+Threads: 100
+Iterations: 10000
+Pi: 3.1176237623762377
+Total: 10100
+Inside: 7872
+Outside: 2228
+Ratio: 3.533213644524237
+real: 14ms
+user: 27ms
+sys: 13ms
+____________________________________________
+Threads: 5
+Iterations: 10000
+Pi: 3.138830584707646
+Total: 10005
+Inside: 7851
+Outside: 2154
+Ratio: 3.6448467966573816
+real: 4ms
+user: 7ms
+sys: 3ms
+____________________________________________
+Threads: 1
+Iterations: 10000
+Pi: 3.1336866313368663
+Total: 10001
+Inside: 7835
+Outside: 2166
+Ratio: 3.6172668513388735
+real: 4ms
+user: 7ms
+sys: 3ms
+____________________________________________
+
+Threads: 1
+Iterations: 10000000
+Pi: 3.1414740858525914
+Total: 10000001
+Inside: 7853686
+Outside: 2146315
+Ratio: 3.659148820187158
+real: 99ms
+user: 197ms
+sys: 98ms
+____________________________________________
+Threads: 5
+Iterations: 10000000
+Pi: 3.1417120291439855
+Total: 10000005
+Inside: 7854284
+Outside: 2145721
+Ratio: 3.660440476650972
+real: 59ms
+user: 117ms
+sys: 58ms
+____________________________________________
+Threads: 10
+Iterations: 10000000
+Pi: 3.1404788595211404
+Total: 10000010
+Inside: 7851205
+Outside: 2148805
+Ratio: 3.653754063304953
+real: 80ms
+user: 160ms
+sys: 80ms
+____________________________________________
+Threads: 100
+Iterations: 10000000
+Pi: 3.1416221837781615
+Total: 10000100
+Inside: 7854134
+Outside: 2145966
+Ratio: 3.659952673993903
+real: 93ms
+user: 185ms
+sys: 92ms
+____________________________________________
+Threads: 5
+Iterations: 500000000
+Pi: 3.1415067365849327
+Total: 500000005
+Inside: 392688346
+Outside: 107311659
+Ratio: 3.659326019738452
+real: 1874ms
+user: 3748ms
+sys: 1874ms
+____________________________________________
+Threads: 10
+Iterations: 500000000
+Pi: 3.1415947771681045
+Total: 500000010
+Inside: 392699355
+Outside: 107300655
+Ratio: 3.6598038940209636
+real: 1817ms
+user: 3634ms
+sys: 1817ms
+____________________________________________
+Threads: 1
+Iterations: 500000000
+Pi: 3.141576577716847
+Total: 500000001
+Inside: 392697073
+Outside: 107302928
+Ratio: 3.659705101430224
+real: 4475ms
+user: 8949ms
+sys: 4474ms
+____________________________________________
+
+Threads: 15
+Iterations: 500000000
+Pi: 3.1416725131665495
+Total: 500000010
+Inside: 392709072
+Outside: 107290938
+Ratio: 3.660225917681883
+real: 1878ms
+user: 3756ms
+sys: 1878ms
+____________________________________________
+
+
+
+Conclusion:
+
+
+
+It seems that as the input size grows larger, the number of threads to maximize
+efficiency grows larger as well, as can be seen by my results.
+
+At lower numbers of iterations it seems that between 1 and 5 threads is
+the ideal for fast caluclations, but as the iterations reached 
+500000000, 10 threads seemed to be roughly the ideal number.
+
+I expect on large numbers of iterations, more threads would result 
+in fastest results.
